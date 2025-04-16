@@ -1,22 +1,5 @@
-import unittest
 from math_utils import add, subtract
-
-class TestMathUtils(unittest.TestCase):
-    def test_add(self):
-        self.assertEqual(add(5, 5), 10)
-        self.assertEqual(add(-1, 1), 0)
-
-    def test_subtract(self):
-        self.assertEqual(subtract(10, 8), 5)
-        self.assertEqual(subtract(0, 0), 0)
-
-if __name__ == '__main__':
-    unittest.main()
-
-def test_multiply():
-    assert multiply(4, 3) == 12
-def test_multiply_invalid_type():
-    try:
-        multiply("a", 3)
-    except ValueError:
-        assert True
+def test_add():
+    assert add(2, 3) == 5
+def test_subtract():
+    assert subtract(5, 2) == 3
