@@ -12,3 +12,8 @@ class TestMathUtils(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+def test_multiply():
+assert multiply(4, 3) == 12
+def test_multiply_invalid_type():
+
